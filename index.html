@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modernes Snake</title>
+    <link rel="stylesheet" href="css/snake.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="score-container">
+            Score: <span id="score">0</span>
+        </div>
+        <div class="highscore-container">
+            Highscore: <span id="highscore">0</span>
+        </div>
+        <div id="game-board"></div>
+        <div class="control-info">
+            Steuerung: Pfeiltasten ← ↑ → ↓
+        </div>
+        <div class="modal" id="start-modal">
+            <div class="modal-content">
+                <h2>Modernes Snake</h2>
+                <p>Steure die Schlange mit den Pfeiltasten und sammle so viele Früchte wie möglich!</p>
+                
+                <div class="difficulty-selector">
+                    <div class="speed-label active" data-speed="100">
+                        <input type="radio" name="speed" id="speed-normal" value="100" checked hidden>
+                        Normal
+                    </div>
+                    <div class="speed-label" data-speed="70">
+                        <input type="radio" name="speed" id="speed-fast" value="70" hidden>
+                        Schnell
+                    </div>
+                    <div class="speed-label" data-speed="40">
+                        <input type="radio" name="speed" id="speed-insane" value="40" hidden>
+                        Extrem
+                    </div>
+                </div>
+                
+                <button class="button" id="start-game">Spiel starten</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/snake.js"></script>
+</body>
+</html>
